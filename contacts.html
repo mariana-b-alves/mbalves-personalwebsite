@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Contacts | Mariana Alves</title>
+</head>
+<body>
+    <div class="main-menu">
+        <div id="menu-txt">
+            <a href="../mbalves-personalwebsite/aboutme.html">About Me</a>
+            <a href="../mbalves-personalwebsite/skills.html">Skills</a>
+            <a href="../mbalves-personalwebsite/portfolio.html">Portfolio</a>
+            <a href="../mbalves-personalwebsite/contacts.html">Contacts</a>
+            <hr>
+        </div>
+    </div>
+
+   <!--SIDE NAV-->
+   <button class ="popup-btn open-btn">
+    <i class = "fas fa-bars"></i>
+</button>
+
+<div class="popup popup-dark">
+    <div class="popup popup-light">
+        <button class="popup-btn close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+    
+        <ul class="side-txt-list">
+            <li><a href="../mbalves-personalwebsite/aboutme.html">About Me</a></li>
+            <li><a href="../mbalves-personalwebsite/skills.html">Skills</a></li>
+            <li><a href="../mbalves-personalwebsite/portfolio.html">Portfolio</a></li>
+            <li><a href="../mbalves-personalwebsite/contacts.html">Contacts</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="div5" class="my-divs">
+    <div class="overlay">
+        <div>
+            <h1>Contact me</h1>
+
+            <div class="contacts">
+                <h3>Feel free to contact me anytime. I am always happy to help you. </h3>
+                    <br>
+                    <p>Mobile: (+351) 932 533 529</p>
+                    <p>Email: m.bourdain.alves@gmail.com</p>
+                    <p>Linkedin: <a href="https://www.linkedin.com/in/mariana-alves-02aba426b/">Link</a></p>
+            </div>
+        </div>
+
+        <script>
+             ScrollReveal({
+                    reset:true,
+                    distance:'60px',
+                    duration:2500,
+                    delay:400,
+                });
+            
+                 
+                /*div5 scroll*/
+                ScrollReveal().reveal('#div5 h1',{delay:500, origin:'left'});
+
+                ScrollReveal().reveal('#div5 p',{delay:500, origin:'left'});
+
+                ScrollReveal().reveal('form',{delay:500, origin:'left'});
+
+                ScrollReveal().reveal('.contacts h2',{delay:500, origin:'left'});
+
+                ScrollReveal().reveal('.overlay form',{delay:500, origin:'left'});
+        </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
