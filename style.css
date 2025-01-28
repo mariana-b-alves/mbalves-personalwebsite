@@ -41,8 +41,9 @@ html, body{
 }
 
 .main-menu img{
-    margin-left:40px;
-    width:200px;
+    margin-left:5px;
+    width: 250px;
+    padding-top:0;
 }
 
 #menu-txt a{
