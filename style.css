@@ -51,6 +51,8 @@ html, body{
     font-size:17px;
     font-weight:bold;
     text-decoration:none;
+    float: right;
+    padding:0 35px 30px 0;
 }
 
 
@@ -148,7 +150,7 @@ button:hover{
 /*DIV 1 START*/
 
 #div1 {
-    background-image:url(../website/img/computer.jpg);
+    background-image:url(../mbalves-personalwebsite/img/computer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
