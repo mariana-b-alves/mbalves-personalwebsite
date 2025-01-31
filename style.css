@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:wght@200;300;500;600;700;800&display=swap');
 * {
     box-sizing: border-box;
     margin:0;
@@ -7,7 +6,8 @@
 }
 
 body{
-    font-family:'Roboto Slab', 'Arial';
+    font-family:'Raleway', 'Arial';
+    font-weight: 400;
     overflow-x: hidden;
 }
 
@@ -24,11 +24,11 @@ html, body{
     display:flex;
     align-items:center;
     padding:25px 2px 0px;
-    position:static;
+    position:absolute;
     justify-content:space-between;
     width:100%;
     height:auto;
-    background-color:transparent;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .main-menu hr{
@@ -47,10 +47,10 @@ html, body{
 }
 
 #menu-txt a{
-    color:rgba(18, 18, 18, 1);
-    margin:0 35px 0;
+    color:rgb(255, 255, 255);
+    margin:0 20px 0;
     font-size:17px;
-    font-weight:bold;
+    font-weight:400;
     text-decoration:none;
 }
 
@@ -74,7 +74,7 @@ html, body{
 .open-btn {
     position:fixed;
     top:10px;
-    right:350px;
+    right:400px;
     color:black;
 } 
 
@@ -97,7 +97,7 @@ html, body{
 }
 
 .popup-light{
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.7);
     width:95%;
     border-top-left-radius:10px;
     border-top-right-radius:10px;
@@ -106,7 +106,7 @@ html, body{
 }
 
 .popup-dark{
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:rgba(255, 255, 255, 0.2);
     border-top-left-radius:10px;
     border-top-right-radius:10px;
     width:60%;
@@ -118,7 +118,7 @@ html, body{
     opacity:0.4;
     position:absolute;
     top:30px;
-    left:60px;
+    left:120px;
 }
 
 .side-txt-list{
@@ -131,17 +131,18 @@ html, body{
 }
 
 .side-txt-list li a, .main-menu a{
-    color:rgb(144, 105, 189);
+    color:black;
     text-decoration:none;
     font-size:17px;
     font-weight:600;
+    margin-left: 30px;
 }
 
-.side-txt-list li a:hover, .main-menu a:hover{
+.side-txt-list li a:active, .main-menu a:active{
     color:rgb(179, 148, 215);
 }
 
-button:hover{
+button:active{
     color:rgb(179, 148, 215);
 }
 
@@ -150,8 +151,7 @@ button:hover{
 #div1 {
     background-image:url(../mbalves-personalwebsite/img/computer.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
+    background-repeat: no-repeat;    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
@@ -162,6 +162,7 @@ button:hover{
 #div1 h1 {
     color:white;
     text-align:center;
+    font-weight: 400;
     margin:0 40px 30px;
     text-shadow:2px 3px 5px rgba(0, 0, 0, 0.5);
 }
@@ -179,15 +180,17 @@ button:hover{
 
 #contact-me{
     border-style:none;
-    background-color:rgb(144, 105, 189);
-    width:20vw;
+    background-color:black;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    width:30vw;
     margin-left:40px;
+    
 }
 
 #contact-me:hover{
     border-style:none;
     background-color:rgb(179, 148, 215);
-    width:20vw;
+    width:30vw;
     margin-left:40px;
     transform:scale(1.15);
 }
@@ -195,10 +198,16 @@ button:hover{
 #contact-me a{
     color:white;
     text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
 }
 /*DIV 1 END*/
 
 /*DIV 2 START*/
+
+#div2 {
+    padding-top: 120px;
+}
 
 #div2 div img {
     display: block;
@@ -215,20 +224,20 @@ button:hover{
 
 #div2 div h1 {
     color: rgb(144, 105, 189);
-    text-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
-    margin: 30px auto 30px;
+    margin: auto 30px;
     text-align:center;
+    font-weight: 400;
 }
 
 #div2 div p {
     color: rgb(144, 105, 189);
-    text-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
     line-height: 2;
     letter-spacing: 0.5px;
     font-size: 1.2rem;
     font-size:16px;
     margin-left:30px;
     margin-bottom:70px;
+    font-weight: 400;
 }
 
 /*DIV 2 END*/
@@ -240,9 +249,12 @@ button:hover{
     flex-direction:column;
     align-items: center;
     text-align: center;
-    position:sticky;
-    padding: 20px 30px 0px;
-    background-color:rgb(144, 105, 189);
+    padding: 80px 30px 0px;
+}
+
+#skill_title h1, #other h1{
+    font-weight: 400;
+    color:rgb(144, 105, 189);
 }
 
 #skill_title, #other{
@@ -250,10 +262,10 @@ button:hover{
     padding: 50px;
 }
 
-
-#skill_title h1, .skills h3, .skills p, #other h1{
+.skills h3, .skills p{
     color:white;
     text-shadow: 2px 2px 2px rgba(26,25,25,0.5);
+    font-weight: 400;
 }
 
 .skills h3, .skills p {
@@ -297,11 +309,13 @@ button:hover{
     border-top:2px solid rgba(255, 255, 255, 0.7);
     box-shadow:3px 3px 7px rgb(0, 0, 0, 0.7);
     border-radius:15px;
+    
 }
 
 .other_ul h3{
     color:white;
     font-size:20px;
+    font-weight: 400;
 }
 
 .other_ul h4{
@@ -316,11 +330,14 @@ button:hover{
 
 .other_ul a{
     text-decoration:none;
+    color:rgb(144, 105, 189);
+    font-weight: 600;
 }
 
 .other_ul a:active{
-    color:rgb(144, 105, 189);
+    color:rgb(179, 148, 215);
 }
+
 hr{
     margin-top:50px;
 }
@@ -334,35 +351,37 @@ hr{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 60px 10% 0px;
-    background-color:rgb(144, 105, 189);
+    padding: 120px 10% 0px;
 }
 
 #portfolio h1{
-    color:white;
+    color:rgb(144, 105, 189);
     margin-bottom:40px;
-    text-shadow: 2px 2px 2px rgba(26,25,25,0.5);
+    font-weight: 400;
 }
 
 .portfolio-titles{
-    margin-top:10px;
-    color:white;
+    margin-top:25px;
+    color:rgb(144, 105, 189);
+}
+
+.portfolio-titles:active{
+    color:rgb(179, 148, 215);
 }
 
 .portfolio-titles a{
-    color:white;
-    text-shadow: 2px 2px 2px rgba(26,25,25,0.5);
+    color:rgb(144, 105, 189);
     text-decoration:none;
     font-size:25px;
-    font-weight:bold;
 }
 
 .portfolio-titles h4{
-    color:white;
+    color:rgb(144, 105, 189);
     text-shadow: 2px 2px 2px rgba(26,25,25,0.5);
     text-decoration:none;
     font-size:14px;
 }
+
 .portfolio-pics{
     background-color:rgba(246,244,244,0);
     margin-bottom:70px;
@@ -370,11 +389,8 @@ hr{
  }
 
  .portfolio-pics img{
+    box-shadow: 1px 1px 7px rgb(0, 0, 0, 0.2);
     width:700px;
- }
-
- .portfolio-titles a{
-    color:white;
  }
 
  .portfolio-pics:hover{
@@ -389,13 +405,14 @@ hr{
  .portfolio-pics img:hover{
     box-shadow:2px 2px 7px white;
     background-color:rgba(255,255,255, 0.3);
+    box-shadow: 3px 3px 7px rgba(144, 105, 189);
     border-radius:5px;
  }
 /*DIV 4 END*/
 
 /*DIV 5 START*/
 #div5{
-    padding-top:40px;
+    padding-top:120px;
     background-color:white;
     display:flex;
     flex-direction: column;
@@ -403,10 +420,11 @@ hr{
     text-align: center;
 }
 
-#div5 h1, #div5 p {
+#div5 h1 {
     color:rgb(144, 105, 189);
-    text-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
     margin:15px;
+    padding-bottom:30px;
+    font-weight: 400;
 
 }
 
@@ -414,52 +432,9 @@ hr{
     font-size: 1.5rem;
 }
 
-form {
-    padding: 10px;
-    
-}
-
-form input, form textarea, button {
-    width: 100%;
-    padding: 10px;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    border-radius:5px;
-}
-
-form input:focus {
-    outline: none;
-}
-
-form textarea {
-    font-family: inherit;
-    font-size: 1.2rem;
-}
-
-form textarea:focus {
-    outline: none;
-}
-
-form button {
-    border: none;
-    padding:10px 0 10px;
-    border-radius:10px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.2s ease-in;
-    
-}
-
-form button:hover {
-    background-color:rgb(144, 105, 189);
-    color: #fff;
-    transform: scale(1.15);
-}
-
 .contacts h3{
-    color:rgb(144, 105, 189);
     margin-top:25px;
-    text-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 400;
 }
 .contacts p{
     font-size:1px;
@@ -491,6 +466,7 @@ form button:hover {
     #div1 h1 {
         font-size: 1.5rem
     }
+
 }
 
 @media(max-width: 450px) {
@@ -516,6 +492,17 @@ form button:hover {
 
     .popup-btn{
         display:block;
+    }
+
+    
+    .open-btn{
+        right:250px
+    }
+ }
+
+ @media (min-width:500px) and (max-width:800px) {
+    .open-btn{
+        right:350px
     }
  }
 
