@@ -183,7 +183,9 @@ button:active{
     background-color:black;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
     width:30vw;
+    height:7vh;
     margin-left:40px;
+    border-radius:5%;
     
 }
 
@@ -425,7 +427,6 @@ hr{
     margin:15px;
     padding-bottom:30px;
     font-weight: 400;
-
 }
 
 #div5 p {
@@ -455,6 +456,27 @@ hr{
 }
 
 /*DIV 5 END*/
+
+/*FOOTER*/
+
+footer{
+    background-color: black;
+    border-radius:40px;
+    width:55em;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+footer p{
+    font-size:20px;
+    color: white;
+    padding-top: 1em;
+    text-align: center;
+}
 
 /*MEDIA QUERY*/
 
@@ -497,6 +519,10 @@ hr{
     
     .open-btn{
         right:250px
+    }
+
+    footer{
+        width: 40em;
     }
  }
 
