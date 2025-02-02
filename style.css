@@ -55,12 +55,17 @@ html, body{
 }
 
 
-#menu-txt a:active {
+#menu-txt a:hover {
     color:rgb(144, 105, 189);
     transform:scale(1.15);
 }
 
 /*SIDE-MENU*/
+.side-txt-list img {
+    margin-top: 1.2em;
+    margin-left: 2.7em;
+    width: 15em;
+}
 .popup-btn {
     border:none;
     background-color:transparent;
@@ -76,6 +81,7 @@ html, body{
     top:10px;
     right:400px;
     color:black;
+    z-index: 1;
 } 
 
 .popup{
@@ -118,7 +124,7 @@ html, body{
     opacity:0.4;
     position:absolute;
     top:30px;
-    left:120px;
+    left:170px;
 }
 
 .side-txt-list{
@@ -138,11 +144,11 @@ html, body{
     margin-left: 30px;
 }
 
-.side-txt-list li a:active, .main-menu a:active{
+.side-txt-list li a:hover, .main-menu a:hover{
     color:rgb(179, 148, 215);
 }
 
-button:active{
+button:hover{
     color:rgb(179, 148, 215);
 }
 
@@ -151,7 +157,8 @@ button:active{
 #div1 {
     background-image:url(../mbalves-personalwebsite/img/computer.jpg);
     background-size: cover;
-    background-repeat: no-repeat;    display: flex;
+    background-repeat: no-repeat;    
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
@@ -336,7 +343,7 @@ button:active{
     font-weight: 600;
 }
 
-.other_ul a:active{
+.other_ul a:hover{
     color:rgb(179, 148, 215);
 }
 
@@ -367,7 +374,7 @@ hr{
     color:rgb(144, 105, 189);
 }
 
-.portfolio-titles:active{
+.portfolio-titles:hover{
     color:rgb(179, 148, 215);
 }
 
@@ -447,7 +454,7 @@ hr{
     color:rgb(144, 105, 189);
 }
 
-.contacts a:active{
+.contacts a:hover{
     color:rgb(179, 148, 215);
 }
 
@@ -466,9 +473,7 @@ footer{
     height: 5em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    
+    align-items: center;  
 }
 
 footer p{
@@ -481,10 +486,6 @@ footer p{
 /*MEDIA QUERY*/
 
 @media(max-width: 600px) {
-    .skills {
-        width: 70vw;
-    }
-
     #div1 h1 {
         font-size: 1.5rem
     }
@@ -508,6 +509,10 @@ footer p{
 
  
 @media(min-width: 350px) and (max-width:800px) {
+    .skills {
+        width: 70vw;
+    }
+
     .main-menu{
         display:none;
     }
@@ -515,7 +520,6 @@ footer p{
     .popup-btn{
         display:block;
     }
-
     
     .open-btn{
         right:250px
@@ -564,7 +568,6 @@ footer p{
 
  }
 
-
  @media (min-width: 420px) and (max-width:1000px){
     .text p{
         font-size:15px;
@@ -579,7 +582,6 @@ footer p{
      form input, form textarea, button {
         width: 80%;
     }
-
     
     .photo img{
         width:30vw;
