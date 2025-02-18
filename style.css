@@ -254,9 +254,7 @@ button:hover{
     font-weight: 400;
 }
 
-#div2 footer{
-    margin-left: 17.5em;
-}
+
 
 /*DIV 2 END*/
 
@@ -372,11 +370,16 @@ hr{
     padding: 120px 10% 0px;
 }
 
-#portfolio h1{
+#portfolio h1, #portfolio h2{
     color:rgb(144, 105, 189);
     margin-bottom:40px;
     font-weight: 400;
 }
+
+#portfolio h2{
+    font-size: 1.3em;
+}
+
 
 .portfolio-titles{
     margin-top:25px;
@@ -502,10 +505,18 @@ footer p{
         font-size: 1.5rem
     }
 
-    #div2 footer{
-        margin-left:0;
-    }
+}
 
+@media (max-width:800px) {
+    #div2 footer{
+        width: 100%;
+        margin-left:.1em;
+    }
+}
+@media (min-width:800px) and (max-width:1600px){
+    #div2 footer{
+        width: 100%;
+    }
 }
 
 @media(max-width: 450px) {
@@ -553,26 +564,28 @@ footer p{
     .open-btn{
         right:350px
     }
-
-    #div2 footer{
-        margin-left:4em;
-    }
  }
 
  @media (min-width:800px) and (max-width:1000px) {
 
     #div2 footer{
-        margin-left:5em;
+        margin-left:.2em;
     }
  }
 
- @media (min-width:1000px) and (max-width:1200px) {
+ @media (min-width:900px) and (max-width:1100px) {
     #div2 footer{
-        margin-left:7em;
+        width: 95%;
+        margin-left:2em;
     }
  }
 
-
+ @media (min-width:1100px) and (max-width:1200px) {
+    #div2 footer{
+        width: 90%;
+        margin-left:3.5em;
+    }
+ }
 
  @media (min-width: 1000px) and (max-width:1024px){
     .text p{
