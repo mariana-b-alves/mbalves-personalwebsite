@@ -155,7 +155,7 @@ button:hover{
 /*DIV 1 START*/
 
 #div1 {
-    background-image:url(../mbalves-personalwebsite/img/computer.jpg);
+    background-image:url(img/computer.jpg);
     background-size: cover;
     background-repeat: no-repeat;    
     display: flex;
