@@ -201,7 +201,6 @@ button:hover{
     border-style:none;
     background-color:rgb(179, 148, 215);
     width:30vw;
-    margin-left:40px;
     transform:scale(1.15);
 }
 
@@ -559,8 +558,6 @@ footer p{
     }
     
  }
-
-
  @media (min-width:500px) and (max-width:800px) {
     .open-btn{
         right:350px
