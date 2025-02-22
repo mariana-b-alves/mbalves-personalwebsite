@@ -540,7 +540,7 @@ footer p{
  }
 
   
-@media(min-width: 350px) and (max-width:800px) {
+@media(min-width: 300px) and (max-width:800px) {
  
     .skills {
         width: 70vw;
