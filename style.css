@@ -223,6 +223,10 @@ button:hover{
 
 #div2 {
     padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
 
 #div2 div img {
@@ -256,9 +260,7 @@ button:hover{
     font-weight: 400;
 }
 
-#div2 footer{
-    margin-left: 1.5rem;
-}
+
 
 
 /*DIV 2 END*/
