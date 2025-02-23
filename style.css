@@ -554,13 +554,13 @@ footer p{
     }
     
     .open-btn{
-        right:250px
+        right:200px
     }
     
  }
  @media (min-width:500px) and (max-width:800px) {
     .open-btn{
-        right:350px
+        right:250px
     }
  }
 
